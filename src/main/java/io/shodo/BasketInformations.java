@@ -8,11 +8,11 @@ import java.util.HashMap;
  */
 public class BasketInformations {
 
-    // The product of the basket
-    static HashMap<String, Integer> map = new HashMap<String, Integer>();
-
     // The fact that the basket has promo code
     private static boolean codeDePromotion = false;
+    
+    // The product of the basket
+    static HashMap<String, Integer> map = new HashMap<String, Integer>();
 
     public void addProductToBasket(String product, Integer price, boolean isPromoCode) {
         if (isPromoCode) {
